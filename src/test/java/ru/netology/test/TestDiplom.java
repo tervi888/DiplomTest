@@ -42,7 +42,7 @@ public class TestDiplom {
         Assertions.assertEquals("APPROVED", entity.getStatus());
     }
 
-
+// баг
     @org.junit.jupiter.api.Test
     @DisplayName("Поля заполнены валидными значениями и номером карты DECLINED")
     void shouldBeDeclinedPurchaseTourCard() {
@@ -235,7 +235,7 @@ public class TestDiplom {
         card.requiredFieldNotification();
         SQLHelper.assertDbEmpty();
     }
-
+    // баг
     @org.junit.jupiter.api.Test
     @DisplayName("Отправка формы с именем и фамилией введенными на кириллице в поле Владелец")
     void submitFormLettersCyrillicInHolder() {
@@ -243,7 +243,7 @@ public class TestDiplom {
         card.formatNotification();
         SQLHelper.assertDbEmpty();
     }
-
+    // баг
     @org.junit.jupiter.api.Test
     @DisplayName("Отправка формы с введенными спецсимволами в поле Владелец")
     void submitFormGetSymbolsHolder() {
@@ -251,7 +251,7 @@ public class TestDiplom {
         card.formatNotification();
         SQLHelper.assertDbEmpty();
     }
-
+    // баг
     @org.junit.jupiter.api.Test
     @DisplayName("Отправка формы с введенными цифрами в поле Владелец")
     void submitFormNumbersInHolder() {
@@ -259,7 +259,7 @@ public class TestDiplom {
         card.formatNotification();
         SQLHelper.assertDbEmpty();
     }
-
+    // баг
     @org.junit.jupiter.api.Test
     @DisplayName("Отправка формы с введенными именем и фамилией в нижнем регистре")
     void submitFormGetLowerCaseLettersInHolder() {
@@ -267,7 +267,7 @@ public class TestDiplom {
         card.formatNotification();
         SQLHelper.assertDbEmpty();
     }
-
+    // баг
     @org.junit.jupiter.api.Test
     @DisplayName("Отправка формы с введенным только одной буквой в поле Владелец")
     void submitFormGetOneHolder() {
@@ -275,7 +275,7 @@ public class TestDiplom {
         card.formatNotification();
         SQLHelper.assertDbEmpty();
     }
-
+    // баг
     @org.junit.jupiter.api.Test
     @DisplayName("Отправка формы с пустым полем CVC/CVV")
     void submitFormEmptyCVV() {
@@ -291,7 +291,7 @@ public class TestDiplom {
         card.formatNotification();
         SQLHelper.assertDbEmpty();
     }
-
+    // баг
     @org.junit.jupiter.api.Test
     @DisplayName("Ввод латинских букв в поле CVC/CVV")
     void getLettersCVV() {
@@ -299,7 +299,7 @@ public class TestDiplom {
         card.formatNotification();
         SQLHelper.assertDbEmpty();
     }
-
+    // баг
     @org.junit.jupiter.api.Test
     @DisplayName("Ввод букв на кириллице в поле CVC/CVV")
     void getLettersCyrillicCVV() {
